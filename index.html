@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Sopyan</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.2);
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            border-radius: 5px;
+            transition: width 2s ease-in-out;
+        }
+        
+        .project-card {
+            transition: transform 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keahlian">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyek">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold mb-3">Halo, Saya <span class="text-warning">Sopyan</span></h1>
+                    <h3 class="mb-4">Desainer Grafis</h3>
+                    <p class="lead mb-4">Saya menciptakan identitas visual yang kuat dan komunikatif melalui desain yang inovatif dan bermakna untuk membantu brand Anda tampil memukau.</p>
+                    <a href="#tentang" class="btn btn-warning btn-lg me-3">Pelajari Lebih</a>
+                    <a href="#kontak" class="btn btn-outline-light btn-lg">Hubungi Saya</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="image/profil.png" alt="Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Tentang Saya</h2>
+                    <p class="text-muted">Mengenal lebih dekat siapa saya</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Tentang Saya sebagai Desainer</h3>
+                    <p class="mb-3">Saya adalah seorang desainer grafis yang berpengalaman dalam menciptakan identitas visual yang kuat dan komunikatif. Dengan keahlian dalam branding, layout design, dan ilustrasi digital, saya membantu klien mengkomunikasikan pesan mereka dengan cara yang visual dan menarik.</p>
+                    <p class="mb-4">Passion saya terletak pada eksplorasi kreativitas tanpa batas, menggabungkan estetika modern dengan fungsionalitas yang efektif. Setiap proyek adalah kesempatan untuk menciptakan sesuatu yang unik dan bermakna.</p>
+                    <div class="row">
+                        <div class="col-6">
+                            <h5><i class="fas fa-user text-primary"></i> Nama</h5>
+                            <p>Mohammad Sopyan</p>
+                        </div>
+                        <div class="col-6">
+                            <h5><i class="fas fa-envelope text-primary"></i> Email</h5>
+                            <p>mohammadsopyan17@gmail.com</p>
+                        </div>
+                        <div class="col-6">
+                            <h5><i class="fas fa-phone text-primary"></i> Telepon</h5>
+                            <p>+62 838-1378-1702</p>
+                        </div>
+                        <div class="col-6">
+                            <h5><i class="fas fa-map-marker-alt text-primary"></i> Lokasi</h5>
+                            <p>Pandeglang, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="image/foto.png" alt="About" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="keahlian" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Keahlian</h2>
+                    <p class="text-muted">Software dan tools desain yang saya kuasai</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>Adobe Photoshop</h5>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>Adobe Illustrator</h5>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h5>CorelDRAW</h5>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="proyek" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Portofolio Desain</h2>
+                    <p class="text-muted">Karya-karya desain terbaik yang telah saya buat</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="image/logo.jpg" class="card-img-top" alt="Brand Identity">
+                        <div class="card-body">
+                            <h5 class="card-title">Brand Identity Design</h5>
+                            <p class="card-text">Desain identitas brand lengkap termasuk logo, color palette, typography, dan brand guidelines untuk startup teknologi.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">Logo Design</span>
+                                <span class="badge bg-primary me-1">Branding</span>
+                                <span class="badge bg-primary me-1">Illustrator</span>
+                                <span class="badge bg-primary">Photoshop</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Lihat Detail</a>
+                            <a href="#" class="btn btn-primary btn-sm">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="image/brosur.jpg" class="card-img-top" alt="Print Design">
+                        <div class="card-body">
+                            <h5 class="card-title">Campaign Print Design</h5>
+                            <p class="card-text">Desain kampanye print meliputi poster, brosur, flyer, dan materi promosi untuk event dan produk klien.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-success me-1">Print Design</span>
+                                <span class="badge bg-success me-1">Layout</span>
+                                <span class="badge bg-success me-1">InDesign</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Lihat Detail</a>
+                            <a href="#" class="btn btn-primary btn-sm">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <img src="image/art.jpg" class="card-img-top" alt="Digital Art">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Illustration</h5>
+                            <p class="card-text">Koleksi ilustrasi digital custom untuk berbagai keperluan, dari karakter design hingga landscape art.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-warning me-1">Illustration</span>
+                                <span class="badge bg-warning me-1">Digital Art</span>
+                                <span class="badge bg-warning me-1">Procreate</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="#" class="btn btn-outline-primary btn-sm me-2">Lihat Detail</a>
+                            <a href="#" class="btn btn-primary btn-sm">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="kontak" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Hubungi Saya</h2>
+                    <p class="text-muted">Mari bekerja sama untuk proyek Anda</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="nama" class="form-label">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subjek" class="form-label">Subjek</label>
+                                    <input type="text" class="form-control" id="subjek" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pesan" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="pesan" rows="5" required></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">Kirim Pesan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 text-center">
+                    <h4 class="mb-4">Ikuti Saya</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="mb-0">&copy; 2025 Portofolio Sopyan. Dibuat dengan <i class="fas fa-heart text-danger"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+   
+        window.addEventListener('scroll', function() {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+       
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Saya akan segera menghubungi Anda kembali.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
